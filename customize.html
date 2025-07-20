@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="customize.css" />
 </head>
 <body>
+    <!-- Loader -->
+<div id="loader-wrapper">
+    <div class="loader-ring">
+        <img src="https://image.pitchbook.com/nbm70i7u8vtfrN5CaD5GlA8fCr01746434057240_200x200" alt="Logo" class="loader-logo">
+    </div>
+</div>
+
 
     <header class="customize-header">
         <h1>Customize Your Deoghar Tour</h1>
@@ -15,11 +22,11 @@
     </header>
 
     <div class="slideshow">
-        <img src="slide1.jpg" class="slide active" alt="Slide 1">
-        <img src="slide2.jpg" class="slide" alt="Slide 2">
-        <img src="slide3.jpg" class="slide" alt="Slide 3">
-        <img src="slide4.jpg" class="slide" alt="Slide 4">
-        <img src="slide5.jpg" class="slide" alt="Slide 5">
+        <img src="https://dynamic.tourtravelworld.com/package-images/photo-big/dir_17/499287/266148.jpg" class="slide active" alt="Slide 1">
+        <img src="https://peakvisor.com/photo/HD/Jharkhand-parasnath-hills-giridih-india-view-2358292903.jpg" class="slide" alt="Slide 2">
+        <img src="https://www.godigit.com/content/dam/godigit/directportal/en/chhinnamasta-temple.jpg" class="slide" alt="Slide 3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/PURI_JAGANATHA_TEMPLE%2C_PURI%2C_ORISSA%2C_INDIA%2C_ASIA.jpg" class="slide" alt="Slide 4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Shanti_Stupa_at_Rajgir_%28cropped%29.jpg" class="slide" alt="Slide 5">
     </div>
 
     <main class="customize-container">
@@ -51,5 +58,11 @@
         }, 3000);
     </script>
 
+<script>
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader-wrapper');
+        loader.classList.add('fade-out');
+    });
+</script>
 </body>
 </html>
