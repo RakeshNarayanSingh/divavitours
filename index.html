@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Divavi Tours and Travels - Deoghar</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <!-- Services Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <h2>Our Services</h2>
+        <a href="customize.html" class="color1">Customize Deoghar Tour Package</a>
+        <a href="#" class="color3">One Way Taxi Services</a>
+        <a href="hotel.html" class="color4">Best Hotels in Deoghar</a>
+        <a href="#book-trip" class="color5">Car Rental/Taxi Hire</a>
+        <a href="#" class="color7">Bus Booking</a>
+        <a href="explore-deoghar.html" class="color8">Explore Places in Deoghar</a>
+        <a href="https://www.ixigo.com/flights" class="color9" target="_blank">Flight Booking</a>
+        <a href="https://www.ixigo.com/trains" class="color10" target="_blank">Train Booking</a>
+        <a href="#contact" class="color6">Contact Us</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="slideshow">
+                <img src="slide1.jpg" class="slide active" alt="Slide 1">
+                <img src="slide2.jpg" class="slide" alt="Slide 2">
+                <img src="slide3.jpg" class="slide" alt="Slide 3">
+                <img src="slide4.jpg" class="slide" alt="Slide 4">
+                <img src="slide5.jpg" class="slide" alt="Slide 5">
+            </div>
+            <img src="divavi-logo.png" alt="Divavi Tours Logo" class="logo-img">
+            <h1>Divavi Tours and Travels - Deoghar</h1>
+            <p>Creating Memories, Discovering Hidden Gems, and Experiencing Culture</p>
+        </header>
+
+        <!-- Booking Form -->
+        <section class="booking-form-section" id="book-trip">
+            <h2>Book Your Trip</h2>
+            <form action="https://formsubmit.co/Divavitours@gmail.com" method="POST" class="booking-form">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required>
+
+                <label for="passengers">Total Passengers:</label>
+                <input type="number" id="passengers" name="Total Passengers" min="1" required>
+
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date" name="Pickup Date" required>
+
+                <label for="pickup-time">Pickup Time:</label>
+                <input type="time" id="pickup-time" name="Pickup Time" required>
+
+                <label for="drop-date">Drop Date (optional):</label>
+                <input type="date" id="drop-date" name="Drop Date">
+
+                <label for="drop-time">Drop Time (optional):</label>
+                <input type="time" id="drop-time" name="Drop Time">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{10}" required placeholder="10-digit phone number">
+
+                <label for="pickup-location">Pickup Location:</label>
+                <input type="text" id="pickup-location" name="Pickup Location" required>
+
+                <label for="drop-location">Drop Location:</label>
+                <input type="text" id="drop-location" name="Drop Location" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+
+        <!-- Popular Places -->
+        <section class="popular-places">
+            <h2>Popular Places to Visit in Deoghar</h2>
+            <div class="places-grid">
+                <div class="place-card">
+                    <img src="baidyanath.jpg" alt="Baba Baidyanath Dham">
+                    <p>Baba Baidyanath Dham</p>
+                </div>
+                <div class="place-card">
+                    <img src="trikut.jpg" alt="Trikut Pahar">
+                    <p>Trikut Pahar</p>
+                </div>
+                <div class="place-card">
+                    <img src="naulakha.jpg" alt="Naulakha Temple">
+                    <p>Naulakha Temple</p>
+                </div>
+                <div class="place-card">
+                    <img src="tapovan.jpg" alt="Tapovan Caves">
+                    <p>Tapovan Caves</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nearby Places -->
+        <section class="near-places">
+            <h2>Places Near Deoghar to Visit</h2>
+            <div class="near-places-grid">
+                <div class="near-place-card">
+                    <img src="basukinath.jpg" alt="Basukinath Temple">
+                    <p>Basukinath Temple</p>
+                </div>
+                <div class="near-place-card">
+                    <img src="rajmahal.jpg" alt="Rajmahal Hills">
+                    <p>Rajmahal Hills</p>
+                </div>
+                <div class="near-place-card">
+                    <img src="massanjore.jpg" alt="Massanjore Dam">
+                    <p>Massanjore Dam</p>
+                </div>
+                <div class="near-place-card">
+                    <img src="bhagalpur.jpg" alt="Bhagalpur">
+                    <p>Bhagalpur</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicles We Provide -->
+        <section class="vehicles">
+            <h2>Vehicles We Provide</h2>
+            <div class="vehicles-grid">
+                <div class="vehicle-card">
+                    <img src="car1.jpg" alt="Swift">
+                    <p>Swift</p>
+                </div>
+                <div class="vehicle-card">
+                    <img src="car2.jpg" alt="Alto">
+                    <p>Alto</p>
+                </div>
+                <div class="vehicle-card">
+                    <img src="car3.jpg" alt="Dzire">
+                    <p>Dzire</p>
+                </div>
+                <div class="vehicle-card">
+                    <img src="car4.jpg" alt="Etios">
+                    <p>Etios</p>
+                </div>
+                <div class="vehicle-card">
+                    <img src="car5.jpg" alt="Innova">
+                    <p>Innova</p>
+                </div>
+                <div class="vehicle-card">
+                    <img src="car6.jpg" alt="Ertiga">
+                    <p>Ertiga</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="about-us-flex">
+            <div class="about-us-text">
+                <h2>About Us</h2>
+                <p>At Divavi Tours and Travels, travel is about creating memories and experiencing culture.</p>
+                <p>We are Deoghar’s trusted local travel agency, offering family vacations, pilgrimages, and Jharkhand tours with comfort and safety.</p>
+                <p>We provide well-crafted packages and local expertise to help you explore Jharkhand's beauty and temples.</p>
+                <p><strong>Why Travel With Us?</strong></p>
+                <ul>
+                    <li>✅ Local Expertise</li>
+                    <li>✅ Personalized Packages</li>
+                    <li>✅ 24/7 Support</li>
+                    <li>✅ Comfortable Vehicles</li>
+                </ul>
+                <p>Travel Jharkhand the Divavi way — warm, welcoming, and memorable. Contact us today to plan your journey.</p>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-card">
+                <p>📞 +91 97089 79812</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📧 Divavitours@gmail.com</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 Divavi Tours and Travels | Deoghar | All rights reserved.
+        </footer>
+    </main>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919708979812?text=Hello" class="whatsapp-float" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp Chat">
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 3000);
+
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.getElementById('sidebar');
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+
+        // Block past dates in pickup and drop date
+        window.onload = function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('pickup-date').setAttribute('min', today);
+            document.getElementById('drop-date').setAttribute('min', today);
+        };
+    </script>
+</body>
+</html>

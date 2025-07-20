@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Best Hotels in Deoghar - Divavi Tours</title>
+    <link rel="stylesheet" href="hotel.css" />
+</head>
+<body>
+
+    <header class="hotel-header">
+        <h1>Best Hotels in Deoghar</h1>
+        <p>Comfortable, clean, and well-located stays for your Deoghar trip</p>
+        <a href="index.html" class="home-button">🏠 Home</a>
+    </header>
+
+    <main class="hotels-container">
+
+        <!-- Hotel 1 -->
+        <div class="hotel-card">
+            <div class="slideshow-container" id="hotel1-slideshow">
+                <img src="hotel1-1.jpg" class="slide active">
+                <img src="hotel1-2.jpg" class="slide">
+                <img src="hotel1-3.jpg" class="slide">
+                <img src="hotel1-4.jpg" class="slide">
+                <img src="hotel1-5.jpg" class="slide">
+                <button class="prev" onclick="plusSlides('hotel1', -1)">❮</button>
+                <button class="next" onclick="plusSlides('hotel1', 1)">❯</button>
+            </div>
+            <h2>Hotel Baidyanath</h2>
+            <a href="https://yourbookinglink1.com" class="book-button" target="_blank">Book Now</a>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-card">
+            <div class="slideshow-container" id="hotel2-slideshow">
+                <img src="hotel2-1.jpg" class="slide active">
+                <img src="hotel2-2.jpg" class="slide">
+                <img src="hotel2-3.jpg" class="slide">
+                <img src="hotel2-4.jpg" class="slide">
+                <img src="hotel2-5.jpg" class="slide">
+                <button class="prev" onclick="plusSlides('hotel2', -1)">❮</button>
+                <button class="next" onclick="plusSlides('hotel2', 1)">❯</button>
+            </div>
+            <h2>Hotel Trikut Residency</h2>
+            <a href="https://yourbookinglink2.com" class="book-button" target="_blank">Book Now</a>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel-card">
+            <div class="slideshow-container" id="hotel3-slideshow">
+                <img src="hotel3-1.jpg" class="slide active">
+                <img src="hotel3-2.jpg" class="slide">
+                <img src="hotel3-3.jpg" class="slide">
+                <img src="hotel3-4.jpg" class="slide">
+                <img src="hotel3-5.jpg" class="slide">
+                <button class="prev" onclick="plusSlides('hotel3', -1)">❮</button>
+                <button class="next" onclick="plusSlides('hotel3', 1)">❯</button>
+            </div>
+            <h2>Hotel Tapovan View</h2>
+            <a href="https://yourbookinglink3.com" class="book-button" target="_blank">Book Now</a>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div class="hotel-card">
+            <div class="slideshow-container" id="hotel4-slideshow">
+                <img src="hotel4-1.jpg" class="slide active">
+                <img src="hotel4-2.jpg" class="slide">
+                <img src="hotel4-3.jpg" class="slide">
+                <img src="hotel4-4.jpg" class="slide">
+                <img src="hotel4-5.jpg" class="slide">
+                <button class="prev" onclick="plusSlides('hotel4', -1)">❮</button>
+                <button class="next" onclick="plusSlides('hotel4', 1)">❯</button>
+            </div>
+            <h2>Hotel Naulakha Palace</h2>
+            <a href="https://yourbookinglink4.com" class="book-button" target="_blank">Book Now</a>
+        </div>
+
+    </main>
+
+    <script>
+        const slideshows = {
+            hotel1: { index: 0, slides: [] },
+            hotel2: { index: 0, slides: [] },
+            hotel3: { index: 0, slides: [] },
+            hotel4: { index: 0, slides: [] },
+        };
+
+        for (let key in slideshows) {
+            const container = document.getElementById(`${key}-slideshow`);
+            slideshows[key].slides = container.querySelectorAll('.slide');
+        }
+
+        function plusSlides(hotel, n) {
+            slideshows[hotel].index = (slideshows[hotel].index + n + slideshows[hotel].slides.length) % slideshows[hotel].slides.length;
+            showSlides(hotel);
+        }
+
+        function showSlides(hotel) {
+            slideshows[hotel].slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === slideshows[hotel].index);
+            });
+        }
+    </script>
+</body>
+</html>

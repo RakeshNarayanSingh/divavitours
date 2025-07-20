@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Explore Places in Deoghar - Divavi Tours</title>
+    <link rel="stylesheet" href="explore-deoghar.css" />
+</head>
+<body>
+
+    <!-- Home Button -->
+    <div class="home-button-container">
+        <a href="index.html" class="home-button">🏠 Home</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="explore-hero">
+        <h1>Explore Places in Deoghar</h1>
+        <p>Discover the beauty and culture of Deoghar with us</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="places-container">
+
+        <!-- Place Cards -->
+        <div class="place-card">
+            <h2>Baba Baidyanath Temple</h2>
+            <img src="baidyanath1.jpg" alt="Baba Baidyanath Temple" id="baidyanath-img">
+            <button onclick="nextImage('baidyanath')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Naulakha Mandir</h2>
+            <img src="naulakha1.jpg" alt="Naulakha Mandir" id="naulakha-img">
+            <button onclick="nextImage('naulakha')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Satsang Ashram</h2>
+            <img src="satsang1.jpg" alt="Satsang Ashram" id="satsang-img">
+            <button onclick="nextImage('satsang')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Trikut Pahar</h2>
+            <img src="trikut1.jpg" alt="Trikut Pahar" id="trikut-img">
+            <button onclick="nextImage('trikut')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Tapovan Caves and Hills</h2>
+            <img src="tapovan1.jpg" alt="Tapovan Caves" id="tapovan-img">
+            <button onclick="nextImage('tapovan')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Nandan Pahar</h2>
+            <img src="nandan1.jpg" alt="Nandan Pahar" id="nandan-img">
+            <button onclick="nextImage('nandan')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Ramakrishna Mission Vidyapith</h2>
+            <img src="rkmission1.jpg" alt="Ramakrishna Mission Vidyapith" id="rkmission-img">
+            <button onclick="nextImage('rkmission')">Next</button>
+        </div>
+
+        <div class="place-card">
+            <h2>Mayurakshi River</h2>
+            <img src="mayurakshi1.jpg" alt="Mayurakshi River" id="mayurakshi-img">
+            <button onclick="nextImage('mayurakshi')">Next</button>
+        </div>
+
+    </main>
+
+    <!-- Slideshow Script -->
+    <script>
+        const images = {
+            baidyanath: ["baidyanath1.jpg", "baidyanath2.jpg", "baidyanath3.jpg", "baidyanath4.jpg"],
+            naulakha: ["naulakha1.jpg", "naulakha2.jpg", "naulakha3.jpg", "naulakha4.jpg"],
+            satsang: ["satsang1.jpg", "satsang2.jpg", "satsang3.jpg", "satsang4.jpg"],
+            trikut: ["trikut1.jpg", "trikut2.jpg", "trikut3.jpg", "trikut4.jpg"],
+            tapovan: ["tapovan1.jpg", "tapovan2.jpg", "tapovan3.jpg", "tapovan4.jpg"],
+            nandan: ["nandan1.jpg", "nandan2.jpg", "nandan3.jpg", "nandan4.jpg"],
+            rkmission: ["rkmission1.jpg", "rkmission2.jpg", "rkmission3.jpg", "rkmission4.jpg"],
+            mayurakshi: ["mayurakshi1.jpg", "mayurakshi2.jpg", "mayurakshi3.jpg", "mayurakshi4.jpg"],
+        };
+
+        const indices = {
+            baidyanath: 0,
+            naulakha: 0,
+            satsang: 0,
+            trikut: 0,
+            tapovan: 0,
+            nandan: 0,
+            rkmission: 0,
+            mayurakshi: 0,
+        };
+
+        function nextImage(place) {
+            indices[place] = (indices[place] + 1) % images[place].length;
+            document.getElementById(`${place}-img`).src = images[place][indices[place]];
+        }
+    </script>
+</body>
+</html>

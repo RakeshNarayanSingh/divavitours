@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Customize Your Tour - Divavi Tours</title>
+    <link rel="stylesheet" href="customize.css" />
+</head>
+<body>
+
+    <header class="customize-header">
+        <h1>Customize Your Deoghar Tour</h1>
+        <p>We offer fully customizable tour packages to suit your needs. Raise a query below, and we will contact you shortly to plan your perfect Deoghar trip.</p>
+        <a href="index.html" class="home-button">🏠 Home</a>
+    </header>
+
+    <div class="slideshow">
+        <img src="slide1.jpg" class="slide active" alt="Slide 1">
+        <img src="slide2.jpg" class="slide" alt="Slide 2">
+        <img src="slide3.jpg" class="slide" alt="Slide 3">
+        <img src="slide4.jpg" class="slide" alt="Slide 4">
+        <img src="slide5.jpg" class="slide" alt="Slide 5">
+    </div>
+
+    <main class="customize-container">
+        <form action="https://formsubmit.co/Divavitours@gmail.com" method="POST" class="customize-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{10}" required placeholder="10-digit phone number">
+
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="Email">
+
+            <button type="submit">Raise Request</button>
+        </form>
+    </main>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 3000);
+    </script>
+
+</body>
+</html>
