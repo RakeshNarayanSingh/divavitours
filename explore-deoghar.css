@@ -1,65 +1,109 @@
+/* Loader */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+#loader-wrapper.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-ring {
+    border: 8px solid #3498db;
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Reset and base styling */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
     background: #f8f8f8;
     color: #333;
-}
-.home-button-container {
     text-align: center;
-    margin: 15px 0;
 }
 
-.home-button {
-    display: inline-block;
-    background: #FF6F61;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 1em;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.home-button:hover {
-    background: #e55b50;
-    transform: scale(1.05);
-}
-
+/* Hero Section */
 .explore-hero {
-    background: linear-gradient(45deg, #FF6F61, #FFB347);
+    background: linear-gradient(45deg, #0080B3, #86ddff);
     color: white;
-    text-align: center;
     padding: 30px 20px;
 }
 
 .explore-hero h1 {
-    margin: 0;
     font-size: 1.8em;
+    margin: 0;
 }
 
 .explore-hero p {
-    margin: 5px 0 0;
     font-size: 1em;
+    margin-top: 8px;
 }
 
+/* Home Button */
+.home-button-container {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.home-button {
+    background: #057caf;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.home-button:hover {
+    background: #057caf;
+}
+
+/* Places Grid */
 .places-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px; /* gap: row-gap column-gap */
+    row-gap: 40px; /* increased vertical spacing */
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 10px 40px 10px;
 }
 
 .place-card {
-    background: #fff;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     overflow: hidden;
-    text-align: center;
-    padding: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -70,29 +114,45 @@ body {
 
 .place-card img {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 5px;
+    display: block;
 }
 
 .place-card h2 {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #FF6F61;
+    font-size: 1.1em;
+    color: #057caf;
+    margin: 12px 0;
 }
 
-.place-card button {
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #2E8B57;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.3s;
+.place-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
-.place-card button:hover {
-    background: #256d46;
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .places-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 15px;
+        row-gap: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .places-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 12px;
+        row-gap: 30px;
+    }
+    .place-card img {
+        height: 160px;
+    }
+    .explore-hero h1 {
+        font-size: 1.5em;
+    }
+    .explore-hero p {
+        font-size: 0.9em;
+    }
 }
