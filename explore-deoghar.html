@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="explore-deoghar.css" />
 </head>
 <body>
+    <!-- Loader -->
+<div id="loader-wrapper">
+    <div class="loader-ring">
+        <img src="https://image.pitchbook.com/nbm70i7u8vtfrN5CaD5GlA8fCr01746434057240_200x200" alt="Logo" class="loader-logo">
+    </div>
+</div>
+
 
     <!-- Home Button -->
     <div class="home-button-container">
@@ -22,85 +29,85 @@
     <!-- Main Content -->
     <main class="places-container">
 
-        <!-- Place Cards -->
+        <!-- Place Cards with clickable images -->
+
         <div class="place-card">
             <h2>Baba Baidyanath Temple</h2>
-            <img src="baidyanath1.jpg" alt="Baba Baidyanath Temple" id="baidyanath-img">
-            <button onclick="nextImage('baidyanath')">Next</button>
+            <a href="https://en.wikipedia.org/wiki/Baidyanath_Temple" target="_blank">
+                <img src="https://www.financialexpress.com/wp-content/uploads/2020/07/temple660.jpg" alt="Baba Baidyanath Temple">
+            </a>
         </div>
 
         <div class="place-card">
-            <h2>Naulakha Mandir</h2>
-            <img src="naulakha1.jpg" alt="Naulakha Mandir" id="naulakha-img">
-            <button onclick="nextImage('naulakha')">Next</button>
+            <h2>Naulakha Mandir( Balananda Brahmachari Aashram)</h2>
+            <a href="https://en.wikipedia.org/wiki/Naulakha_Temple,_Deoghar" target="_blank">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/naulakha-mandir-deoghar-jharkhand-1-attr-hero?qlt=82&ts=1726723357053" alt="Naulakha Mandir">
+            </a>
         </div>
 
         <div class="place-card">
-            <h2>Satsang Ashram</h2>
-            <img src="satsang1.jpg" alt="Satsang Ashram" id="satsang-img">
-            <button onclick="nextImage('satsang')">Next</button>
+            <h2>Thakur Anukulchandra Ashram</h2>
+            <a href="https://en.wikipedia.org/wiki/Satsang_Ashram" target="_blank">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/ce/01/d7/badlapur.jpg?w=1200&h=-1&s=1" alt="Thakur Anukulchandra">
+            </a>
         </div>
 
         <div class="place-card">
-            <h2>Trikut Pahar</h2>
-            <img src="trikut1.jpg" alt="Trikut Pahar" id="trikut-img">
-            <button onclick="nextImage('trikut')">Next</button>
+            <h2>Punasi Dam</h2>
+            <a href="https://mindtrip.ai/attraction/jasidih-jharkhand/punasi-dam-deoghar/at-3oSb6u0E" target="_blank">
+                <img src="https://i.ytimg.com/vi/mzHCD_Lze0s/maxresdefault.jpg" alt="Punasi Dam">
+            </a>
         </div>
 
         <div class="place-card">
             <h2>Tapovan Caves and Hills</h2>
-            <img src="tapovan1.jpg" alt="Tapovan Caves" id="tapovan-img">
-            <button onclick="nextImage('tapovan')">Next</button>
+            <a href="https://tourism.jharkhand.gov.in/how-to-reach/105/4" target="_blank">
+                <img src="https://hblimg.mmtcdn.com/content/hubble/img/ttd_images_march/mmt/activities/m_Deoghar_tapovan_Caves_and_Hills_1_l_480_640.jpg?im=Resize=(288,162)" alt="Tapovan Caves">
+            </a>
         </div>
 
         <div class="place-card">
             <h2>Nandan Pahar</h2>
-            <img src="nandan1.jpg" alt="Nandan Pahar" id="nandan-img">
-            <button onclick="nextImage('nandan')">Next</button>
+            <a href="https://deoghar.nic.in/tourist-place/nandanpahad/" target="_blank">
+                <img src="https://i0.wp.com/angdesh.com/wp-content/uploads/2022/07/Nandan-Pahar-Deoghar-2.jpg?fit=1280%2C720&ssl=1" alt="Nandan Pahar">
+            </a>
         </div>
 
         <div class="place-card">
             <h2>Ramakrishna Mission Vidyapith</h2>
-            <img src="rkmission1.jpg" alt="Ramakrishna Mission Vidyapith" id="rkmission-img">
-            <button onclick="nextImage('rkmission')">Next</button>
+            <a href="https://en.wikipedia.org/wiki/Ramakrishna_Mission_Vidyapith,_Deoghar" target="_blank">
+                <img src="https://live.staticflickr.com/65535/52244746453_3dde6486a0_b.jpg" alt="Ramakrishna Mission Vidyapith">
+            </a>
         </div>
 
         <div class="place-card">
-            <h2>Mayurakshi River</h2>
-            <img src="mayurakshi1.jpg" alt="Mayurakshi River" id="mayurakshi-img">
-            <button onclick="nextImage('mayurakshi')">Next</button>
+            <h2>Deoghar Water Park</h2>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/65/4b/a0/wild-waadi-other-ride.jpg?w=500&h=500&s=1" alt="Deoghar Water Park">
+            </a>
+        </div>
+
+        <!-- Placeholder for adding more places in future -->
+        <div class="place-card">
+            <h2>Trikut Parvat</h2>
+            <a href="https://en.wikipedia.org/wiki/Trikut_Hill" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Trikut_Hills.jpg" alt="Trikut Parvat">
+            </a>
+        </div>
+
+        <div class="place-card">
+            <h2>Rikhiapeeth Ashram</h2>
+            <a href="https://rikhiapeeth.in/about-rikhiapeeth/" target="_blank">
+                <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/477008c40a08382b6edfa089fa3a250a_1000x1000.jpg" alt="Rikhiapeeth Ashram">
+            </a>
         </div>
 
     </main>
 
-    <!-- Slideshow Script -->
-    <script>
-        const images = {
-            baidyanath: ["baidyanath1.jpg", "baidyanath2.jpg", "baidyanath3.jpg", "baidyanath4.jpg"],
-            naulakha: ["naulakha1.jpg", "naulakha2.jpg", "naulakha3.jpg", "naulakha4.jpg"],
-            satsang: ["satsang1.jpg", "satsang2.jpg", "satsang3.jpg", "satsang4.jpg"],
-            trikut: ["trikut1.jpg", "trikut2.jpg", "trikut3.jpg", "trikut4.jpg"],
-            tapovan: ["tapovan1.jpg", "tapovan2.jpg", "tapovan3.jpg", "tapovan4.jpg"],
-            nandan: ["nandan1.jpg", "nandan2.jpg", "nandan3.jpg", "nandan4.jpg"],
-            rkmission: ["rkmission1.jpg", "rkmission2.jpg", "rkmission3.jpg", "rkmission4.jpg"],
-            mayurakshi: ["mayurakshi1.jpg", "mayurakshi2.jpg", "mayurakshi3.jpg", "mayurakshi4.jpg"],
-        };
-
-        const indices = {
-            baidyanath: 0,
-            naulakha: 0,
-            satsang: 0,
-            trikut: 0,
-            tapovan: 0,
-            nandan: 0,
-            rkmission: 0,
-            mayurakshi: 0,
-        };
-
-        function nextImage(place) {
-            indices[place] = (indices[place] + 1) % images[place].length;
-            document.getElementById(`${place}-img`).src = images[place][indices[place]];
-        }
-    </script>
+<script>
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader-wrapper');
+        loader.classList.add('fade-out');
+    });
+</script>
 </body>
 </html>
