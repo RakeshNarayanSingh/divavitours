@@ -1,156 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Divavi Tours and Travels - Deoghar</title>
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Divavi Tours and Travels - Deoghar</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger">&#9776;</div>
+<!-- Loader -->
+<div id="loader-wrapper">
+    <div class="loader-ring">
+        <img src="https://image.pitchbook.com/nbm70i7u8vtfrN5CaD5GlA8fCr01746434057240_200x200" alt="Divavi Logo" class="loader-logo">
+    </div>
+</div>
 
-    <!-- Services Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <h2>Our Services</h2>
-        <a href="customize.html" class="color1">Customize Deoghar Tour Package</a>
-        <a href="#" class="color3">One Way Taxi Services</a>
-        <a href="hotel.html" class="color4">Best Hotels in Deoghar</a>
-        <a href="#book-trip" class="color5">Car Rental/Taxi Hire</a>
-        <a href="#" class="color7">Bus Booking</a>
-        <a href="explore-deoghar.html" class="color8">Explore Places in Deoghar</a>
-        <a href="https://www.ixigo.com/flights" class="color9" target="_blank">Flight Booking</a>
-        <a href="https://www.ixigo.com/trains" class="color10" target="_blank">Train Booking</a>
-        <a href="#contact" class="color6">Contact Us</a>
-    </aside>
+<!-- Drop Down Brand Animation -->
+<div id="brand-drop" class="hidden">
+    <img src="https://image.pitchbook.com/nbm70i7u8vtfrN5CaD5GlA8fCr01746434057240_200x200" alt="Divavi Logo" class="brand-logo-drop">
+    <h1 class="brand-name-drop">Divavi Tours and Travels - Deoghar</h1>
+    <p class="brand-slogan-drop">Creating Memories, Discovering Hidden Gems, and Experiencing Culture</p>
+</div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <header class="hero">
-            <div class="slideshow">
-                <img src="slide1.jpg" class="slide active" alt="Slide 1">
-                <img src="slide2.jpg" class="slide" alt="Slide 2">
-                <img src="slide3.jpg" class="slide" alt="Slide 3">
-                <img src="slide4.jpg" class="slide" alt="Slide 4">
-                <img src="slide5.jpg" class="slide" alt="Slide 5">
-            </div>
-            <img src="divavi-logo.png" alt="Divavi Tours Logo" class="logo-img">
-            <h1>Divavi Tours and Travels - Deoghar</h1>
-            <p>Creating Memories, Discovering Hidden Gems, and Experiencing Culture</p>
-        </header>
+<!-- Hamburger Icon -->
+<div class="hamburger" id="hamburger">&#9776;</div>
 
-        <!-- Booking Form -->
-        <section class="booking-form-section" id="book-trip">
-            <h2>Book Your Trip</h2>
-            <form action="https://formsubmit.co/Divavitours@gmail.com" method="POST" class="booking-form">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+    <h2>Our Services</h2>
+    <a href="customize.html" class="color1">Customize Deoghar Tour Package</a>
+    <a href="hotel.html" class="color4">Best Hotels in Deoghar</a>
+    <a href="explore-deoghar.html" class="color8">Explore Places in Deoghar</a>
+    <a href="#book-trip" class="color5">Car Rental/Taxi Hire</a>
+    <a href="https://bus.ixigo.com/" class="color7" target="_blank">Bus Booking</a>
+    <a href="https://www.ixigo.com/flights" class="color9" target="_blank">Flight Booking</a>
+    <a href="https://www.ixigo.com/trains" class="color10" target="_blank">Train Booking</a>
+    <a href="#contact" class="color6">Contact Us</a>
+</aside>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="Name" required>
+<main class="main-content">
+<!-- Hero Section -->
+<header class="hero">
+    <div class="slideshow">
+        <img src="https://www.jagranimages.com/images/newimg/11072022/11_07_2022-deoghar_shivganga_view_22881165.webp" class="slide active" alt="Slide 1">
+        <img src="https://www.aai.aero/sites/default/files/Airport%20Images/ba1.jpg" class="slide" alt="Slide 2">
+        <img src="https://darshnam.com/wp-content/uploads/2023/10/babadham.jpg" class="slide" alt="Slide 3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Main_Gate_of_Satsang_Ashram%2C_Deoghar.jpg" class="slide" alt="Slide 4">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/naulakha-mandir-deoghar-jharkhand-1-attr-hero?qlt=82&ts=1726723357053" class="slide" alt="Slide 5">
+    </div>
+</header>
 
-                <label for="passengers">Total Passengers:</label>
-                <input type="number" id="passengers" name="Total Passengers" min="1" required>
+<!-- Welcome Quote -->
+<section class="welcome-quote">
+    <p>Welcome to Divavi Tours & Travels 🙏 - Your Journey Starts Here!</p>
+</section>
 
-                <label for="pickup-date">Pickup Date:</label>
-                <input type="date" id="pickup-date" name="Pickup Date" required>
+<!-- Booking Form -->
+<section class="booking-form-section" id="book-trip">
+    <h2>Book Your Trip</h2>
+    <p>🚨Lowest Price Guaranteed Only at Divavi.T.T✅</p>
+    <form id="booking-form" action="https://formsubmit.co/Divavitours@gmail.com" method="POST" class="booking-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-                <label for="pickup-time">Pickup Time:</label>
-                <input type="time" id="pickup-time" name="Pickup Time" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
 
-                <label for="drop-date">Drop Date (optional):</label>
-                <input type="date" id="drop-date" name="Drop Date">
+        <label for="passengers">Total Passengers:</label>
+        <input type="number" id="passengers" name="Total Passengers" min="1" required>
 
-                <label for="drop-time">Drop Time (optional):</label>
-                <input type="time" id="drop-time" name="Drop Time">
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" name="Pickup Date" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{10}" required placeholder="10-digit phone number">
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="time" id="pickup-time" name="Pickup Time" required>
 
-                <label for="pickup-location">Pickup Location:</label>
-                <input type="text" id="pickup-location" name="Pickup Location" required>
+        <label for="drop-date">Drop Date (optional):</label>
+        <input type="date" id="drop-date" name="Drop Date">
 
-                <label for="drop-location">Drop Location:</label>
-                <input type="text" id="drop-location" name="Drop Location" required>
+        <label for="drop-time">Drop Time (optional):</label>
+        <input type="time" id="drop-time" name="Drop Time">
 
-                <button type="submit">Submit Booking</button>
-            </form>
-        </section>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{10}" required placeholder="10-digit phone number">
 
-        <!-- Popular Places -->
+        <label for="pickup-location">Pickup Location:</label>
+        <input type="text" id="pickup-location" name="Pickup Location" required>
+
+        <label for="drop-location">Drop Location:</label>
+        <input type="text" id="drop-location" name="Drop Location" required>
+
+        <button type="submit" id="submit-booking">Submit Booking</button>
+        <p class="note-after-submit">🔴 Note: After submitting, our team will contact you soon for your journey details.</p>
+    </form>
+</section>
+<!-- Sightseeing Spots In Deoghar -->
         <section class="popular-places">
-            <h2>Popular Places to Visit in Deoghar</h2>
-            <div class="places-grid">
+            <h2>Sightseeing Spots In Deoghar</h2>
+<p class="section-note">
+    Discover the beauty and spiritual calm of Deoghar's temples and hills.<br>
+    Let your journey refresh your spirit and create lifelong memories.<br>
+    Explore each spot at your own pace with Divavi Tours.<br>
+    Feel the blessings with every step on this sacred land.<br>
+    Enjoy these beautiful places and capture every moment.
+</p>
+<div class="places-grid">
+
                 <div class="place-card">
-                    <img src="baidyanath.jpg" alt="Baba Baidyanath Dham">
-                    <p>Baba Baidyanath Dham</p>
+                    <a href="https://en.wikipedia.org/wiki/Ramakrishna_Mission_Vidyapith,_Deoghar" target="_blank">
+                        <img src="https://live.staticflickr.com/65535/52244746453_3dde6486a0_b.jpg" alt="Ramakrishna Mission Vidyapith" class="fade-in">
+                    </a>
+                    <p>Ramakrishna Mission Vidyapith</p>
                 </div>
                 <div class="place-card">
-                    <img src="trikut.jpg" alt="Trikut Pahar">
-                    <p>Trikut Pahar</p>
+                    <a href="https://en.wikipedia.org/wiki/Baidyanath_Temple" target="_blank">
+                        <img src="https://darshnam.com/wp-content/uploads/2023/10/babadham.jpg" alt="Baidyanath Dham" class="fade-in">
+                    </a>
+                    <p>Baidyanath Dham</p>
                 </div>
                 <div class="place-card">
-                    <img src="naulakha.jpg" alt="Naulakha Temple">
-                    <p>Naulakha Temple</p>
+                    <a href="https://en.wikipedia.org/wiki/Naulakha_Temple,_Deoghar" target="_blank">
+                        <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/508c971cd31a86660c6f666936fb2f03_1000x1000.jpg" alt="Naulakha Mandir( Balananda Brahmachari Aashram)" class="fade-in">
+                    </a>
+                    <p>Naulakha Mandir( Balananda Brahmachari Aashram)</p>
                 </div>
                 <div class="place-card">
-                    <img src="tapovan.jpg" alt="Tapovan Caves">
-                    <p>Tapovan Caves</p>
+                    <a href="https://en.wikipedia.org/wiki/Trikut_Hill" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Trikut_Hills.jpg" alt="Trikut Parvat" class="fade-in">
+                    </a>
+                    <p>Trikut Parvat</p>
                 </div>
             </div>
         </section>
+        
 
-        <!-- Nearby Places -->
+        <!-- Places Near Deoghar to Visit -->
         <section class="near-places">
             <h2>Places Near Deoghar to Visit</h2>
-            <div class="near-places-grid">
+<p class="section-note">
+    Explore nearby gems around Deoghar during your visit.<br>
+    Add adventure and calm to your journey with these destinations.<br>
+    Discover the charm of Rajgir, Basukinath, Massanjore, and Tarapith.<br>
+    Let Divavi guide your seamless travel experience.<br>
+    Enjoy these beautiful nearby places and feel India's culture.
+</p>
+<div class="near-places-grid">
+
                 <div class="near-place-card">
-                    <img src="basukinath.jpg" alt="Basukinath Temple">
+                    <a href="https://en.wikipedia.org/wiki/Basukinath" target="_blank">
+                        <img src="https://www.goldenagers.in/blog/images/Basukinath-temple.jpg" alt="Basukinath Temple" class="fade-in">
+                    </a>
                     <p>Basukinath Temple</p>
                 </div>
                 <div class="near-place-card">
-                    <img src="rajmahal.jpg" alt="Rajmahal Hills">
-                    <p>Rajmahal Hills</p>
+                    <a href="https://en.wikipedia.org/wiki/Rajgir" target="_blank">
+                        <img src="https://nomadsaikat.com/wp-content/uploads/2023/11/Rajgir-Glass-Bridge-2.webp" alt="Rajgir Hills" class="fade-in">
+                    </a>
+                    <p>Rajgir Hills</p>
                 </div>
                 <div class="near-place-card">
-                    <img src="massanjore.jpg" alt="Massanjore Dam">
+                    <a href="https://en.wikipedia.org/wiki/Massanjore_Dam" target="_blank">
+                        <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/e4772e0676cf6d18f9ed71ebc30042be_1000x1000.jpg" alt="Massanjore Dam" class="fade-in">
+                    </a>
                     <p>Massanjore Dam</p>
                 </div>
                 <div class="near-place-card">
-                    <img src="bhagalpur.jpg" alt="Bhagalpur">
-                    <p>Bhagalpur</p>
+                    <a href="https://en.wikipedia.org/wiki/Tarapith" target="_blank">
+                        <img src="https://www.40kmph.com/wp-content/uploads/2022/01/Tarapith-Temple-Tarapith-Birbhum-West-Bengal.jpg" alt="Tarapith" class="fade-in">
+                    </a>
+                    <p>Tarapith</p>
+                </div>
+                <div class="near-place-card">
+                    <a href="https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A4%B8%E0%A4%A8%E0%A4%BE%E0%A4%A5" target="_blank">
+                        <img src="https://t3.ftcdn.net/jpg/06/44/90/42/360_F_644904289_NbXKTKISNlcpn6ttB2P3upo1IIPqpeKE.jpg" alt="Parasnath" class="fade-in">
+                    </a>
+                    <p>Parasnath</p>
+                </div>
+                <div class="near-place-card">
+                    <a href="https://en.wikipedia.org/wiki/Maluti_temples" target="_blank">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/de/3c/7d/maluti-temple.jpg?w=1200&h=-1&s=1" alt="Maluti temples" class="fade-in">
+                    </a>
+                    <p>Maluti temples</p>
                 </div>
             </div>
         </section>
+
+        <!-- Our Services -->
+<section class="our-services">
+    <h2>Our Services</h2>
+    <h3>Experience the Best Taxi Service</h3>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🌟</div>
+            <h4>Tour Package Taxi</h4>
+            <p>Explore exciting destinations with our tour packages tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🚖</div>
+            <h4>Day Rental Taxi</h4>
+            <p>Flexible and affordable day rental taxi service for all your travel needs.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🕒</div>
+            <h4>24×7 Cab Service</h4>
+            <p>Reliable 24×7 cab service for a comfortable and hassle-free journey.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">✈️</div>
+            <h4>Airport Taxi</h4>
+            <p>Convenient and affordable airport taxi service for a smooth and timely transfer.</p>
+        </div>
+    </div>
+</section>
+
 
         <!-- Vehicles We Provide -->
         <section class="vehicles">
             <h2>Vehicles We Provide</h2>
-            <div class="vehicles-grid">
+<p class="section-note">
+    We have a variety of comfortable multi-seater vehicles for your trips.<br>
+    Travel easily with Divavi, whether solo, with family, or in groups.
+</p>
+<div class="vehicles-grid">
+
                 <div class="vehicle-card">
-                    <img src="car1.jpg" alt="Swift">
-                    <p>Swift</p>
+                    <img src="https://rukminim2.flixcart.com/image/704/844/car/h/m/f/maruti-suzuki-manual-vxi-swift-dzire-original-imaect74zqz9jfwn.jpeg?q=90&crop=false" alt="Maruti Suzuki Dzire" class="fade-in">
+                    <p>Maruti Suzuki Dzire</p>
                 </div>
                 <div class="vehicle-card">
-                    <img src="car2.jpg" alt="Alto">
-                    <p>Alto</p>
+                    <img src="https://cdn.cartoq.com/photos/maruti-suzuki-baleno_colours_arctic-white_0a4cbb52.webp" alt="Maruti Suzuki Baleno" class="fade-in">
+                    <p>Maruti Suzuki Baleno</p>
                 </div>
                 <div class="vehicle-card">
-                    <img src="car3.jpg" alt="Dzire">
-                    <p>Dzire</p>
+                    <img src="https://www.winger-tatamotors.com/images/multi-purpose-vehicle/tata-winger-staff-9d/overview/overview-winger-tourist-staff-9d.png" alt="TATA Winger" class="fade-in">
+                    <p>TATA Winger</p>
                 </div>
                 <div class="vehicle-card">
-                    <img src="car4.jpg" alt="Etios">
-                    <p>Etios</p>
+                    <img src="https://www.forcemotors.com/wp-content/uploads/2025/02/TRAVELLER-T2-STANDARD-3350-MM-WB.png" alt="Force Traveller" class="fade-in">
+                    <p>Force Traveller</p>
                 </div>
                 <div class="vehicle-card">
-                    <img src="car5.jpg" alt="Innova">
+                    <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.png?isig=0&q=80&q=80" alt="Innova" class="fade-in">
                     <p>Innova</p>
                 </div>
                 <div class="vehicle-card">
-                    <img src="car6.jpg" alt="Ertiga">
+                    <img src="https://tavcorsuzuki.co.za/wp-content/uploads/2025/02/Ertiga-1.jpg" alt="Ertiga" class="fade-in">
                     <p>Ertiga</p>
                 </div>
             </div>
@@ -178,44 +272,136 @@
         <section class="contact-section" id="contact">
             <h2>Contact Us</h2>
             <div class="contact-card">
-                <p>📞 +91 97089 79812</p>
-                <p>📞 +91 98765 43210</p>
+                <p>📞 +91 99058 24920 --Divavi Tours And Travels</p>
                 <p>📧 Divavitours@gmail.com</p>
             </div>
         </section>
+    <footer>
+        &copy; 2025 Divavi Tours and Travels | Deoghar | All rights reserved.
+    </footer>
+</main>
 
-        <footer>
-            &copy; 2025 Divavi Tours and Travels | Deoghar | All rights reserved.
-        </footer>
-    </main>
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/919905824920?text=Hello" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Chat">
+</a>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919708979812?text=Hello" class="whatsapp-float" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp Chat">
-    </a>
+<a href="tel:+919905824920" class="whatsapp-float" style="bottom: 90px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnu2-fAAarqZoSumZgAwQlnH3wbOsgh8Y-oqB42PXYLzSDPs5jfUT8cxqcqqfXc0cC3pA&usqp=CAU" alt="Call Us">
+</a>
 
-    <!-- Scripts -->
-    <script>
-        let slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-        setInterval(() => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }, 3000);
+<!-- Terms and Conditions Modal -->
+<div id="terms-modal" class="terms-modal">
+    <div class="terms-modal-content">
+        <h2>Terms and Conditions</h2>
+        <ul>
+            <li>Customers are requested to cooperate with the driver. Misbehavior may lead to trip cancellation.</li>
+            <li>Vehicle is strictly for the route and purpose booked. Any detours or extra kilometers will be charged separately.</li>
+            <li>Toll charges, parking fees, and state taxes (if any) are to be borne by the customer unless included in the package.</li>
+            <li>Booking is confirmed only after advance payment.</li>
+            <li>If a trip is cancelled within 24 hours of pickup, 50% of the advance will be refunded.</li>
+        </ul>
+        <label style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+            <input type="checkbox" id="accept-terms"> I accept the conditions
+        </label>
+        <button id="confirm-submit" disabled>Confirm Booking</button>
+    </div>
+</div>
+<!-- Terms and Conditions Modal -->
+<div id="terms-modal" class="terms-modal">
+    <div class="terms-modal-content">
+        <h2>Terms and Conditions</h2>
+        <ul>
+            <li>Customers are requested to cooperate with the driver. Misbehavior may lead to trip cancellation.</li>
+            <li>Vehicle is strictly for the route and purpose booked. Any detours or extra kilometers will be charged separately.</li>
+            <li>Toll charges, parking fees, and state taxes (if any) are to be borne by the customer unless included in the package.</li>
+            <li>Booking is confirmed only after advance payment.</li>
+            <li>If someone cancels the trip within 24 hours of pickup, 50% of the advance will be fined.</li>
+        </ul>
+        <label style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+            <input type="checkbox" id="accept-terms"> I accept the conditions
+        </label>
+        <button id="confirm-submit" disabled>Confirm Booking</button>
+    </div>
+</div>
 
-        const hamburger = document.getElementById('hamburger');
-        const sidebar = document.getElementById('sidebar');
-        hamburger.addEventListener('click', () => {
-            sidebar.classList.toggle('show');
-        });
+<script>
+// Loader
+window.addEventListener("load", () => {
+    document.getElementById("loader-wrapper").classList.add("fade-out");
+});
 
-        // Block past dates in pickup and drop date
-        window.onload = function() {
-            const today = new Date().toISOString().split('T')[0];
-            document.getElementById('pickup-date').setAttribute('min', today);
-            document.getElementById('drop-date').setAttribute('min', today);
-        };
-    </script>
+// Slideshow
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}, 3000);
+
+// Hamburger toggle
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.toggle('show');
+});
+
+// Date limits
+window.onload = function() {
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('pickup-date').setAttribute('min', today);
+    document.getElementById('drop-date').setAttribute('min', today);
+};
+
+// Fade-in observer
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Terms modal with validation
+const bookingForm = document.getElementById('booking-form');
+const termsModal = document.getElementById('terms-modal');
+const acceptTerms = document.getElementById('accept-terms');
+const confirmSubmit = document.getElementById('confirm-submit');
+
+bookingForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Always prevent default
+
+    if (!bookingForm.checkValidity()) {
+        bookingForm.reportValidity();
+        return;
+    }
+
+    // Show terms modal if form is valid
+    termsModal.style.display = 'flex';
+});
+
+// Enable confirm button only if terms are accepted
+acceptTerms.addEventListener('change', function() {
+    confirmSubmit.disabled = !this.checked;
+});
+
+// Submit form when confirm button clicked
+confirmSubmit.addEventListener('click', function() {
+    if (acceptTerms.checked) {
+        termsModal.style.display = 'none';
+        bookingForm.submit();
+    }
+});
+
+// Close modal on outside click
+termsModal.addEventListener('click', function(e) {
+    if (e.target === termsModal) {
+        termsModal.style.display = 'none';
+    }
+});
+</script>
+
 </body>
 </html>
