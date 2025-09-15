@@ -4,8 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Divavi Tours and Travels - Deoghar</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="styles.css" />
+<meta name="description" content="Divavi Tours and Travels - Best Deoghar Travel Agency. Book Deoghar tours, Deoghar Darshan, taxi service, and customized tour packages at the best price.">
+<meta name="keywords" content="Deoghar Tours, Deoghar Travel Agency, Deoghar Darshan, Taxi in Deoghar, Tours and Travels in Deoghar, Car Rental Deoghar, Deoghar Tourism, Best Tour Packages Deoghar">
+</head>
 </head>
 <body>
 
@@ -60,7 +62,7 @@
 <section class="booking-form-section" id="book-trip">
     <h2>Book Your Trip</h2>
     <p>🚨Lowest Price Guaranteed Only at Divavi.T.T✅</p>
-    <form id="booking-form" action="https://formsubmit.co/divavitours@gmail.com" method="POST" class="booking-form">
+    <form id="booking-form" action="https://formsubmit.co/Divavitours@gmail.com" method="POST" class="booking-form">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
 
@@ -95,6 +97,45 @@
         <p class="note-after-submit">🔴 Note: After submitting, our team will contact you soon for your journey details.</p>
     </form>
 </section>
+
+<!-- WHY CHOOSE US (SEO Section) -->
+<section class="why-choose-us">
+    <h2>Why Choose Divavi Tours and Travels in Deoghar?</h2>
+    <p>
+        Looking for the best <strong>Deoghar Travel Agency</strong>? Divavi Tours and Travels is your trusted partner for 
+        <strong>Deoghar Darshan</strong>, family trips, pilgrimages, and sightseeing tours. 
+        We offer the most reliable <strong>Tours and Travels in Deoghar</strong> with affordable packages and taxi services.
+    </p>
+    <ul>
+        <li>✅ Trusted <strong>Deoghar Tours</strong> and customized travel packages.</li>
+        <li>✅ Reliable <strong>Taxi Service in Deoghar</strong> with professional drivers.</li>
+        <li>✅ Affordable <strong>Deoghar Darshan Packages</strong> including Baidyanath Dham, Trikut Hills, Naulakha Temple, and more.</li>
+        <li>✅ Best choice for <strong>Travel Agencies in Deoghar</strong> for solo, family, and group travelers.</li>
+        <li>✅ 24×7 assistance for your <strong>Deoghar Travel</strong> needs.</li>
+    </ul>
+    <p>
+        Make your <strong>Deoghar trip</strong> memorable with Divavi Tours and Travels — comfort, trust, and unforgettable experiences. 
+    </p>
+</section>
+
+<!-- Interactive Icon Section -->
+<section class="interactive-links">
+  <h2>Explore Divavi Services</h2>
+  <div class="container">
+    <!-- Central Image (can use your logo or mascot) -->
+    <div class="person">
+      <img id="personImg" src="default.jpg" alt="Divavi Logo">
+    </div>
+
+    <!-- Surrounding Icons -->
+    <a href="explore-deoghar.html" class="icon top">Explore Places in Deoghar</a>
+    <a href="hotel.html" class="icon tleft">Best Hotels in Deoghar</a>
+    <a href="#book-trip" class="icon tright">Car Rental</a>
+    <a href="customize.html" class="icon left">Customize Tour Package</a>
+    <a href="#contact" class="icon right">Contact Us</a>
+  </div>
+</section>
+
 <!-- Sightseeing Spots In Deoghar -->
         <section class="popular-places">
             <h2>Sightseeing Spots In Deoghar</h2>
@@ -402,7 +443,36 @@ termsModal.addEventListener('click', function(e) {
         termsModal.style.display = 'none';
     }
 });
+// Change central image on hover
+const personImg = document.getElementById('personImg');
+
+const images = {
+  default: "default.jpg",
+  left: "left.jpg",
+  tleft: "topleft.jpg",
+  top: "top.jpg",
+  tright: "topright.jpg",
+  right: "right.jpg"
+};
+
+function setImage(key) {
+  personImg.src = images[key] || images.default;
+}
+
+// Hover listeners
+document.querySelector('.left').addEventListener('mouseenter', () => setImage('left'));
+document.querySelector('.tleft').addEventListener('mouseenter', () => setImage('tleft'));
+document.querySelector('.top').addEventListener('mouseenter', () => setImage('top'));
+document.querySelector('.tright').addEventListener('mouseenter', () => setImage('tright'));
+document.querySelector('.right').addEventListener('mouseenter', () => setImage('right'));
+
+// Reset on leave
+document.querySelectorAll('.icon').forEach(icon => {
+  icon.addEventListener('mouseleave', () => setImage('default'));
+});
+
 </script>
 
 </body>
 </html>
+
