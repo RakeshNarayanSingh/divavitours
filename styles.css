@@ -394,3 +394,121 @@ footer {
     background: #aaa;
     cursor: not-allowed;
 }
+/* Why Choose Us Section */
+.why-choose-us {
+    background: #f9f9f9;
+    padding: 30px 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+    max-width: 1000px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.why-choose-us h2 {
+    color: #007BFF;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.why-choose-us p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.why-choose-us ul {
+    margin: 10px 0 20px 20px;
+    padding-left: 20px;
+}
+
+.why-choose-us li {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 8px;
+}
+/* Interactive Links Section */
+.interactive-links {
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.interactive-links h2 {
+  color: #007BFF;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+/* Grid Layout */
+/* Centered Grid Layout */
+.container {
+  display: grid;
+  grid-template-areas: 
+    "tleft top tright"
+    "left  person right";
+  grid-template-columns: 1fr 200px 1fr;
+  grid-template-rows: 100px 200px;
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Central Image */
+.person {
+  grid-area: person;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+/* Uniform Icons */
+.icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;        /* Same width */
+  height: 50px;        /* Same height */
+  background: #007BFF;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Positioning */
+.top    { grid-area: top; }
+.tleft  { grid-area: tleft; }
+.tright { grid-area: tright; }
+.left   { grid-area: left; }
+.right  { grid-area: right; }
+
+
+
